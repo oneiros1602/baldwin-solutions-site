@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#05294e">
+  <meta name="description" content="Baldwin Solutions — HVAC, electrical, refrigeration, and handyman services in Atlanta, Georgia. Request an estimate online.">
+  <title>Baldwin Solutions | HVAC • Electrical • Refrigeration • Handyman</title>
+  <style>
+    :root{--navy:#05294e;--navy2:#0a3a69;--blue:#139be7;--light:#edf9ff;--line:#b8dff2;--text:#0a2d4e;--muted:#60798d;--red:#ef3340;--gold:#ffbd18;--white:#fff;--shadow:0 6px 22px rgba(5,41,78,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:#fff}button,input,textarea,select{font:inherit}a{text-decoration:none}button,a{-webkit-tap-highlight-color:transparent}
+    .hero{position:relative;overflow:hidden;background:var(--navy);color:#fff;text-align:center;padding:24px 14px 15px}.pattern{position:absolute;inset:0;opacity:.16;background-image:linear-gradient(60deg,transparent 47%,rgba(255,255,255,.25) 48%,transparent 49%),linear-gradient(-60deg,transparent 47%,rgba(255,255,255,.2) 48%,transparent 49%);background-size:90px 90px}.hero-inner,.quick-actions{position:relative;z-index:1}.logo{width:72px;height:58px;margin:0 auto 4px;position:relative}.logo:before,.logo:after{content:"";position:absolute;background:#fff;border-radius:4px;transform:skewX(-22deg)}.logo:before{width:18px;height:48px;left:17px;top:6px}.logo:after{width:18px;height:48px;right:17px;top:6px;transform:skewX(22deg)}.logo i{position:absolute;display:block;width:14px;height:32px;background:var(--blue);left:29px;top:14px;z-index:2;clip-path:polygon(56% 0,100% 0,66% 42%,100% 42%,28% 100%,44% 56%,10% 56%)}
+    .brand{font-weight:950;font-size:21px;letter-spacing:-.5px}.brand-sub{font-size:8px;font-weight:800;letter-spacing:1.8px;margin-top:2px}.tagline{font-size:7px;letter-spacing:2.2px;margin-top:13px;color:#dcebf5}.hero h1{font-size:28px;line-height:1.1;margin:20px 0 5px;font-weight:950}.hero-lead{font-weight:850;margin:0;font-size:13px}.hero-services{font-size:11px;margin:8px 0 17px;color:#d7e7f2}.primary-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--blue);color:#fff;border:0;border-radius:8px;font-weight:850;box-shadow:0 2px 5px rgba(0,0,0,.18);cursor:pointer}.hero-cta{min-width:190px;padding:14px 20px;font-size:14px}.quick-actions{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;max-width:760px;margin:18px auto 0}.quick-btn{min-height:52px;border:1px solid #4fa7dc;border-radius:7px;background:#0d3b68;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:8px;font-weight:750;cursor:pointer}.quick-btn.emergency{background:var(--red);border-color:#ff8189}.qa-icon{font-size:17px}
+    main{max-width:760px;margin:auto}.estimate-form{padding:20px 12px 0}.photo-box{background:var(--light);border:1px solid var(--line);border-radius:10px;padding:15px 13px 11px;box-shadow:var(--shadow)}h2{margin:0;color:var(--text);font-size:21px;line-height:1.12;font-weight:950;letter-spacing:-.4px}.photo-box>p{font-size:12px;margin:6px 0 11px;color:#496a83}.upload-zone{position:relative;display:flex;align-items:center;justify-content:center;min-height:116px;border:2px dashed #6cbce6;border-radius:8px;background:#fff;overflow:hidden;cursor:pointer;text-align:center}.upload-zone input{position:absolute;inset:0;opacity:0;cursor:pointer}.upload-prompt{pointer-events:none;color:#0b76b8;font-size:12px}.cloud{font-size:31px;line-height:1;margin-bottom:8px}.preview{display:none;width:100%;max-height:250px;object-fit:cover}.privacy{text-align:center;font-size:9px!important;color:#70889a!important;margin:8px 0 0!important}
+    .services-section{padding:22px 0 0}.services-section h2,.project-section h2{margin-bottom:12px}.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}.service-card{min-height:110px;border:1px solid #c9e3f0;background:#fff;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text);cursor:pointer;transition:.18s ease}.service-card.selected{border:2px solid #4ebcf2;box-shadow:0 0 0 3px rgba(19,155,231,.08)}.service-icon{font-size:24px;color:#0b8fd5;line-height:1;margin-bottom:6px}.service-card strong{font-size:12px}.service-card small{font-size:8px;color:#6c8496;margin-top:3px}.project-section{padding:23px 0 22px}textarea,input,select{width:100%;border:1px solid #badbea;border-radius:8px;background:#fff;color:#183c5c;outline:none}textarea:focus,input:focus,select:focus{border-color:#38aee8;box-shadow:0 0 0 3px rgba(19,155,231,.12)}textarea{height:88px;resize:vertical;padding:12px;margin-bottom:8px}input,select{height:42px;padding:0 12px;margin-bottom:8px}.submit-btn{width:100%;height:44px;font-size:13px}.form-note{text-align:center;color:#748b9d;font-size:9px;margin:8px 0 0}.honeypot{position:absolute!important;left:-5000px!important;width:1px!important;height:1px!important}
+    .reviews{background:var(--light);padding:22px 12px 29px}.section-heading-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:13px}.link-btn{border:0;background:none;color:#168bc7;font-weight:850;text-decoration:underline;font-size:10px;cursor:pointer}.review-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.review-card{background:#fff;border:1px solid #c8e1ef;border-radius:9px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,.06)}.work-art{height:88px;position:relative;overflow:hidden}.work-art.hvac{background:linear-gradient(135deg,#a4c3d3,#e8f2f7)}.work-art.electrical{background:linear-gradient(135deg,#d7c39c,#666d74)}.work-art:before{content:"";position:absolute;inset:18px 25px;border:5px solid rgba(8,45,78,.55);border-radius:8px}.work-art.hvac:after{content:"❄ HVAC";position:absolute;inset:auto 0 10px;text-align:center;font-size:12px;font-weight:900;color:#0d4873}.work-art.electrical:after{content:"⚡ ELECTRICAL";position:absolute;inset:auto 0 10px;text-align:center;font-size:12px;font-weight:900;color:#fff}.review-copy{padding:9px 10px 11px;min-height:108px}.stars{color:var(--gold);font-size:12px;letter-spacing:1px}.review-copy p{font-size:10px;line-height:1.4;color:#587086;margin:6px 0}.review-copy strong{font-size:10px}.more-review{display:none}
+    footer{background:var(--navy);color:#fff;text-align:center;padding:28px 15px 23px}footer h2{color:#fff;font-size:20px;margin-bottom:15px}footer a{display:block;color:#fff;font-size:12px;font-weight:850;margin:8px 0}footer p{font-size:11px;color:#b7cbdd;margin:9px 0}.footer-tagline{font-family:Georgia,serif;font-style:italic;color:#d5e5ef;font-size:15px;margin:20px 0}.footer-rule{height:1px;background:#3f6484;margin:20px 0 14px}.footer-services{font-size:7px;letter-spacing:1.45px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .sheet-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:30}.action-sheet{position:fixed;left:10px;right:10px;bottom:-300px;z-index:31;background:#fff;border-radius:17px 17px 10px 10px;padding:12px 14px 14px;box-shadow:0 18px 45px rgba(0,0,0,.3);transition:bottom .22s ease}.action-sheet.open{bottom:10px}.sheet-handle{width:42px;height:4px;border-radius:4px;background:#d5e0e8;margin:0 auto 10px}.action-sheet h3{text-align:center;margin:5px 0 12px}.action-sheet a,.action-sheet button{display:block;width:100%;padding:14px 12px;border-radius:9px;margin-top:8px;text-align:center;font-weight:850}.action-sheet a{background:#eef8fe;color:#0b5f94}.action-sheet button{border:0;background:#edf0f2;color:#34495a;cursor:pointer}
+    .toast{position:fixed;left:50%;bottom:18px;transform:translate(-50%,120px);background:#0b355c;color:#fff;padding:11px 15px;border-radius:999px;font-size:12px;font-weight:800;z-index:60;transition:.25s ease;box-shadow:0 5px 20px rgba(0,0,0,.25)}.toast.show{transform:translate(-50%,0)}
+    @media(min-width:600px){.hero h1{font-size:34px}.estimate-form{padding-left:22px;padding-right:22px}.reviews{padding-left:22px;padding-right:22px;border-radius:14px 14px 0 0}.service-card{min-height:122px}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="pattern" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="logo" aria-hidden="true"><i></i></div>
+      <div class="brand">BALDWIN SOLUTIONS</div>
+      <div class="brand-sub">HVAC | ELECTRICAL | HANDYMAN SERVICES</div>
+      <div class="tagline">SOLUTIONS FOR A BETTER TOMORROW</div>
+      <h1>Need It Fixed Fast?</h1>
+      <p class="hero-lead">Scan • Snap a Photo • Get a Quote</p>
+      <p class="hero-services">HVAC • Electrical • Refrigeration • Handyman Services</p>
+      <a class="primary-btn hero-cta" href="#estimate">Request an Estimate <span>➜</span></a>
+    </div>
+    <div class="quick-actions" aria-label="Quick actions">
+      <button class="quick-btn" id="callTextBtn" type="button"><span class="qa-icon">☎</span><span>Call / Text Now</span></button>
+      <button class="quick-btn" id="saveContactBtn" type="button"><span class="qa-icon">▣</span><span>Save Contact</span></button>
+      <a class="quick-btn emergency" href="tel:+16786836967"><span class="qa-icon">△</span><span>Emergency Service</span></a>
+    </div>
+  </header>
+
+  <main>
+    <form id="estimate" class="estimate-form" action="https://formsubmit.co/BaldwinSolutionsinc@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_subject" value="New Baldwin Solutions Estimate Request">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="Service" id="serviceField" value="HVAC">
+
+      <section class="photo-box">
+        <h2>Upload a Photo of the Problem</h2>
+        <p>A picture helps us give you a more accurate quote.</p>
+        <label class="upload-zone" id="uploadZone">
+          <input id="photoInput" type="file" name="attachment" accept="image/png,image/jpeg,image/webp" capture="environment">
+          <img id="photoPreview" class="preview" alt="Selected problem photo preview">
+          <div class="upload-prompt" id="uploadPrompt"><div class="cloud">☁</div><strong>Tap to Upload a Photo</strong></div>
+        </label>
+        <p class="privacy">No spam. We don’t sell your info. Photo limit: 10 MB.</p>
+      </section>
+
+      <section class="services-section">
+        <h2>What do you need help with today?</h2>
+        <div class="service-grid" role="radiogroup" aria-label="Service needed">
+          <button class="service-card selected" type="button" data-service="HVAC" aria-pressed="true"><span class="service-icon">❄</span><strong>HVAC</strong><small>Heating &amp; Cooling</small></button>
+          <button class="service-card" type="button" data-service="Electrical" aria-pressed="false"><span class="service-icon">⚡</span><strong>Electrical</strong><small>Power &amp; Lighting</small></button>
+          <button class="service-card" type="button" data-service="Refrigeration" aria-pressed="false"><span class="service-icon">▣</span><strong>Refrigeration</strong><small>Maintenance &amp; Repairs</small></button>
+          <button class="service-card" type="button" data-service="Handyman" aria-pressed="false"><span class="service-icon">🔧</span><strong>Handyman</strong><small>General Repairs</small></button>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <h2>Tell us more about your project</h2>
+        <label class="sr-only" for="name">Your name</label><input id="name" name="Name" type="text" placeholder="Your name" required>
+        <label class="sr-only" for="problem">Describe the problem</label><textarea id="problem" name="Problem" placeholder="Describe the problem..." required></textarea>
+        <label class="sr-only" for="location">Service location</label><input id="location" name="Service Location" type="text" placeholder="Service location (e.g. Atlanta, GA)" required>
+        <label class="sr-only" for="contact">Best contact number</label><input id="contact" name="Best Contact Number" type="tel" inputmode="tel" placeholder="Best contact number" required>
+        <label class="sr-only" for="appointment">Preferred appointment time</label>
+        <select id="appointment" name="Preferred Appointment Time" required><option value="" selected disabled>Preferred appointment time</option><option>ASAP / Emergency</option><option>Today</option><option>Tomorrow</option><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Flexible</option></select>
+        <button class="primary-btn submit-btn" type="submit">➤ Submit Request</button>
+        <p class="form-note">Your request will be sent securely to Baldwin Solutions.</p>
+      </section>
+    </form>
+
+    <section class="reviews" id="reviews">
+      <div class="section-heading-row"><h2>Recent Work / Reviews</h2><button id="seeMoreBtn" class="link-btn" type="button">See More</button></div>
+      <div class="review-grid">
+        <article class="review-card"><div class="work-art hvac"></div><div class="review-copy"><div class="stars" aria-label="5 star review">★★★★★</div><p>Fast, professional, and honest. Our AC was back up the same day!</p><strong>— Jessica M.</strong></div></article>
+        <article class="review-card"><div class="work-art electrical"></div><div class="review-copy"><div class="stars" aria-label="5 star review">★★★★★</div><p>Great communication and careful electrical work from start to finish.</p><strong>— Marcus T.</strong></div></article>
+        <article class="review-card more-review"><div class="work-art hvac"></div><div class="review-copy"><div class="stars">★★★★★</div><p>Clear explanation, quick diagnosis, and the repair was handled professionally.</p><strong>— Recent Customer</strong></div></article>
+        <article class="review-card more-review"><div class="work-art electrical"></div><div class="review-copy"><div class="stars">★★★★★</div><p>Easy scheduling, good communication, and the issue was resolved cleanly.</p><strong>— Recent Customer</strong></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Get in Touch</h2>
+    <a href="tel:+16786836967">678-683-6967</a>
+    <a href="mailto:BaldwinSolutionsinc@gmail.com">BaldwinSolutionsinc@gmail.com</a>
+    <p>Atlanta, GA</p>
+    <div class="footer-tagline">Solutions for a Better Tomorrow</div>
+    <div class="footer-rule"></div>
+    <div class="footer-services">RESIDENTIAL | COMMERCIAL | MAINTENANCE | REPAIRS | INSTALLATIONS</div>
+  </footer>
+
+  <div class="sheet-backdrop" id="sheetBackdrop" hidden></div>
+  <div class="action-sheet" id="actionSheet" aria-hidden="true">
+    <div class="sheet-handle"></div><h3>Contact Baldwin Solutions</h3>
+    <a href="tel:+16786836967">☎ Call 678-683-6967</a>
+    <a href="sms:+16786836967?body=Hi%20Baldwin%20Solutions%2C%20I%27d%20like%20to%20request%20service.">✉ Text Baldwin Solutions</a>
+    <button type="button" id="closeSheet">Cancel</button>
+  </div>
+  <div class="toast" id="toast">Contact file created</div>
+
+  <script>
+    const cards=[...document.querySelectorAll('.service-card')], serviceField=document.getElementById('serviceField');
+    cards.forEach(card=>card.addEventListener('click',()=>{cards.forEach(c=>{c.classList.remove('selected');c.setAttribute('aria-pressed','false')});card.classList.add('selected');card.setAttribute('aria-pressed','true');serviceField.value=card.dataset.service;}));
+    const input=document.getElementById('photoInput'),preview=document.getElementById('photoPreview'),prompt=document.getElementById('uploadPrompt');
+    input.addEventListener('change',()=>{const file=input.files&&input.files[0];if(!file)return;if(file.size>10*1024*1024){alert('Please choose a photo under 10 MB.');input.value='';return;}const reader=new FileReader();reader.onload=e=>{preview.src=e.target.result;preview.style.display='block';prompt.style.display='none'};reader.readAsDataURL(file)});
+    const moreBtn=document.getElementById('seeMoreBtn'),extras=[...document.querySelectorAll('.more-review')];let expanded=false;moreBtn.addEventListener('click',()=>{expanded=!expanded;extras.forEach(card=>card.style.display=expanded?'block':'none');moreBtn.textContent=expanded?'Show Less':'See More'});
+    const openBtn=document.getElementById('callTextBtn'),sheet=document.getElementById('actionSheet'),backdrop=document.getElementById('sheetBackdrop'),closeBtn=document.getElementById('closeSheet');
+    function openSheet(){backdrop.hidden=false;requestAnimationFrame(()=>sheet.classList.add('open'));sheet.setAttribute('aria-hidden','false')}function closeSheet(){sheet.classList.remove('open');sheet.setAttribute('aria-hidden','true');setTimeout(()=>backdrop.hidden=true,220)}openBtn.addEventListener('click',openSheet);closeBtn.addEventListener('click',closeSheet);backdrop.addEventListener('click',closeSheet);
+    const toast=document.getElementById('toast');function showToast(msg){toast.textContent=msg;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2200)}
+    document.getElementById('saveContactBtn').addEventListener('click',()=>{const vcard=`BEGIN:VCARD\nVERSION:3.0\nFN:Baldwin Solutions\nORG:Baldwin Solutions\nTEL;TYPE=CELL,VOICE:+16786836967\nEMAIL;TYPE=INTERNET:BaldwinSolutionsinc@gmail.com\nADR;TYPE=WORK:;;;Atlanta;GA;;;USA\nNOTE:HVAC | Electrical | Refrigeration | Handyman Services\nEND:VCARD`;const blob=new Blob([vcard],{type:'text/vcard'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='Baldwin-Solutions.vcf';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);showToast('Baldwin Solutions contact ready to save')});
+    document.getElementById('estimate').addEventListener('submit',()=>{const btn=document.querySelector('.submit-btn');btn.disabled=true;btn.textContent='Sending Request…'});
+  </script>
+</body>
+</html>
