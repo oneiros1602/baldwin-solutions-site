@@ -51,13 +51,14 @@
       <input type="hidden" name="Service" id="serviceField" value="HVAC">
 
       <section class="photo-box">
-        <h2>Upload a Photo of the Problem</h2>
+        <h2>Upload a Photo of the Problem (Optional)</h2>
         <p>A picture helps us give you a more accurate quote.</p>
         <label class="upload-zone" id="uploadZone">
           <input id="photoInput" type="file" name="attachment" accept="image/png,image/jpeg,image/webp" capture="environment">
           <img id="photoPreview" class="preview" alt="Selected problem photo preview">
           <div class="upload-prompt" id="uploadPrompt"><div class="cloud">☁</div><strong>Tap to Upload a Photo</strong></div>
         </label>
+        <p id="photoStatus" style="text-align:center;font-size:11px;font-weight:800;color:#60798d;margin:8px 0 0">Photo optional — no photo attached.</p>
         <p class="privacy">No spam. We don’t sell your info. Photo limit: 10 MB.</p>
       </section>
 
@@ -117,8 +118,8 @@
   <script>
     const cards=[...document.querySelectorAll('.service-card')], serviceField=document.getElementById('serviceField');
     cards.forEach(card=>card.addEventListener('click',()=>{cards.forEach(c=>{c.classList.remove('selected');c.setAttribute('aria-pressed','false')});card.classList.add('selected');card.setAttribute('aria-pressed','true');serviceField.value=card.dataset.service;}));
-    const input=document.getElementById('photoInput'),preview=document.getElementById('photoPreview'),prompt=document.getElementById('uploadPrompt');
-    input.addEventListener('change',()=>{const file=input.files&&input.files[0];if(!file)return;if(file.size>10*1024*1024){alert('Please choose a photo under 10 MB.');input.value='';return;}const reader=new FileReader();reader.onload=e=>{preview.src=e.target.result;preview.style.display='block';prompt.style.display='none'};reader.readAsDataURL(file)});
+    const input=document.getElementById('photoInput'),preview=document.getElementById('photoPreview'),prompt=document.getElementById('uploadPrompt'),photoStatus=document.getElementById('photoStatus');
+    input.addEventListener('change',()=>{const file=input.files&&input.files[0];if(!file){preview.removeAttribute('src');preview.style.display='none';prompt.style.display='block';photoStatus.textContent='Photo optional — no photo attached.';photoStatus.style.color='#60798d';return;}if(file.size>10*1024*1024){alert('Please choose a photo under 10 MB.');input.value='';preview.removeAttribute('src');preview.style.display='none';prompt.style.display='block';photoStatus.textContent='Photo optional — no photo attached.';photoStatus.style.color='#60798d';return;}const reader=new FileReader();reader.onload=e=>{preview.src=e.target.result;preview.style.display='block';prompt.style.display='none';photoStatus.textContent='✓ Photo attached — tap the photo to replace it.';photoStatus.style.color='#16824b'};reader.readAsDataURL(file)});
     const moreBtn=document.getElementById('seeMoreBtn'),extras=[...document.querySelectorAll('.more-review')];let expanded=false;moreBtn.addEventListener('click',()=>{expanded=!expanded;extras.forEach(card=>card.style.display=expanded?'block':'none');moreBtn.textContent=expanded?'Show Less':'See More'});
     const openBtn=document.getElementById('callTextBtn'),sheet=document.getElementById('actionSheet'),backdrop=document.getElementById('sheetBackdrop'),closeBtn=document.getElementById('closeSheet');
     function openSheet(){backdrop.hidden=false;requestAnimationFrame(()=>sheet.classList.add('open'));sheet.setAttribute('aria-hidden','false')}function closeSheet(){sheet.classList.remove('open');sheet.setAttribute('aria-hidden','true');setTimeout(()=>backdrop.hidden=true,220)}openBtn.addEventListener('click',openSheet);closeBtn.addEventListener('click',closeSheet);backdrop.addEventListener('click',closeSheet);
